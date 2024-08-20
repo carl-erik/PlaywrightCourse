@@ -30,7 +30,6 @@ test.describe('Home', () => {
         await page.goto('https://practice.sdetunicorns.com/');
         // await page.locator('#zak-primary-menu .menu-item-about a').click();
        
-        // const homeText = page.locator('#zak-primary-menu >> text=Home');
         const homeText = page.locator('#zak-primary-menu:has-text("Home")');
         const aboutText = page.locator('#zak-primary-menu >> text=About');
 

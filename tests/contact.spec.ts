@@ -18,7 +18,7 @@ test.describe('Contact', () => {
         await page.locator("#evf-submit-277").click();
        
         await page.locator("div[role='alert']").isVisible();
-        // await page.close();
+        await page.close();
     })
 
 })
